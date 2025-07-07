@@ -42,14 +42,18 @@
 
 ---
 
+## 🔗 Link para Download
+
+➡️ https://github.com/NobreRayook/EduTools/raw/main/EduTools.bat
+
+---
+
 ## 📬 Contato e Colaboração
 
 Tem sugestões, ideias ou quer contribuir com o projeto?  
 Entre em contato ou participe:
 
 **Discord:** @NobreRayook
-
-> *Contribuições são bem-vindas! Sinta-se livre para abrir uma issue ou pull request.*
 
 ---
 
