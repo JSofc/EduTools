@@ -44,7 +44,7 @@
 
 ## 🔗 Link para Download
 
-➡️ https://github.com/NobreRayook/EduTools/raw/main/EduTools.bat
+➡️ https://github.com/NobreRayook/EduTools/raw/main/EduTools_V1.1.zip
 
 ---
 
