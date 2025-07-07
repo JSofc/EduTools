@@ -42,12 +42,6 @@
 
 ---
 
-## 🔗 Link para Download
-
-➡️ [Coloque aqui o link do seu EduTools.bat]
-
----
-
 ## 📬 Contato e Colaboração
 
 Tem sugestões, ideias ou quer contribuir com o projeto?  
