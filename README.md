@@ -35,8 +35,8 @@
 
 ## 🖥️ Como usar
 
-1. Baixe o arquivo `.bat` do EduTools.
-2. Dê **dois cliques** para abrir no Windows.
+1. Baixe o arquivo `.zip` do EduTools.
+2. Clque do lado direito e cliquem em *Extrair aqui*, logo após abra a pasta *EduTools* e abra o arquivo *.bat*.
 3. A interface será carregada automaticamente no terminal (CMD).
 4. Escolha uma letra e pressione **Enter** para abrir a ferramenta desejada.
 
