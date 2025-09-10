@@ -49,7 +49,7 @@
 ## 📬 Contato e Colaboração
 
 Tem sugestões, ideias ou quer contribuir com o projeto?  
-Entre em contato ou participe:
+Entre em contato:
 
 **Email:** edutools.ofc@gmail.com
 
