@@ -42,7 +42,7 @@
 
 ## 🔗 Link do Projeto:
 
-➡️ https://nobrerayook.github.io/EduTools/
+➡️ https://jsofc.github.io/EduTools/
 
 ---
 
