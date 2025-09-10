@@ -1,421 +1,435 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduTools</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTools</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-body { 
-    background: linear-gradient(to bottom, #555, #000, #555); 
-    color: #f0f0f0; 
-    line-height: 1.6; 
-    min-height: 100vh;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header { 
-    text-align: center; 
-    padding: 30px 0; 
-    border-bottom: 1px solid #333; 
-    margin-bottom: 30px; 
-}
-
-
-h1 { 
-    font-size: 6rem;
-    margin-bottom: 15px; 
-    color: #fff; 
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25); 
-}
-
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #333;
-    text-align: center; 
-}
-
-h3 {
-    font-size: 1.4rem;
-    margin: 15px 0;
-    color: #ddd;
-}
-
-.devs {
-    color: #bbb;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
-
-.description {
-    color: #aaa;
-    margin-bottom: 25px;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.9rem;
-}
-
-.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.menu-item {
-    background: linear-gradient(to bottom right, #1a1a1a, #151515);
-    padding: 25px 20px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-}
-
-.menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border-color: #555;
-    background: linear-gradient(to bottom right, #222, #1a1a1a);
-}
-
-.menu-item i {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.menu-item span {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.submenu {
-    display: none;
-    background: linear-gradient(to bottom, #151515, #1a1a1a);
-    padding: 30px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    margin-bottom: 30px;
-}
-
-.submenu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.submenu-item {
-    background-color: #111;
-    padding: 20px;
-    border-left: 4px solid #444;
-    cursor: pointer;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-}
-
-.submenu-item:hover {
-    background-color: #1a1a1a;
-    border-left-color: #0af;
-    transform: translateX(5px);
-}
-
-.submenu-item i {
-    margin-right: 15px;
-    font-size: 1.5rem;
-    color: #ddd;
-}
-
-details {
-    display: none;
-    background: linear-gradient(to bottom, #151515, #1a1a1a);
-    padding: 30px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    margin-bottom: 30px;
-}
-
-details p {
-    margin-bottom: 20px;
-    color: #ccc;
-    line-height: 1.8;
-    font-size: 1.1rem;
-}
-
-.btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
-    color: #fff;
-    padding: 12px 20px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.btn:hover {
-    background-color: #333;
-    border-color: #666;
-    transform: translateY(-2px);
-}
-
-.btn i {
-    margin-right: 8px;
-}
-
-.btn-primary {
-    background-color: #0066cc;
-    border-color: #0088ff;
-}
-
-.btn-primary:hover {
-    background-color: #0088ff;
-}
-
-footer {
-    text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid #333;
-    margin-top: 50px;
-    color: #888;
-    font-size: 0.8rem;
-}
-
-.back-btn {
-    margin-bottom: 25px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.prompt-text {
-    background-color: #111;
-    padding: 20px;
-    border-left: 4px solid #5500ff;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 4px;
-}
-
-.prompt-text:hover {
-    background-color: #1a1a1a;
-    transform: translateX(5px);
-}
-
-.copy-notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #0066cc;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.section-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.section-title i {
-    font-size: 2rem;
-    margin-right: 15px;
-    color: #fff;
-}
-
-.search-container {
-    margin: 20px auto;
-    max-width: 500px;
-    position: relative;
-}
-
-.search-input {
-    width: 100%;
-    padding: 12px 45px 12px 15px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #1a1a1a;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.search-icon {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
-}
-
-.search-results {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    max-height: 300px;
-    overflow-y: auto;
-    z-index: 1000;
-}
-
-.search-result-item {
-    padding: 12px 15px;
-    cursor: pointer;
-    border-bottom: 1px solid #333;
-    transition: background-color 0.3s;
-}
-
-.search-result-item:hover {
-    background-color: #222;
-}
-
-.search-result-item:last-child {
-    border-bottom: none;
-}
-
-.github-btn {
-    margin-top: 15px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
-    color: #fff;
-    padding: 12px;
-    border: 1px solid #444;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-}
-
-.github-btn:hover {
-    background-color: #333;
-    border-color: #666;
-    transform: translateY(-2px);
-}
-
-.github-btn i {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .menu {
-    grid-template-columns: 1fr;
+    body {
+      background: linear-gradient(to bottom, #555, #000, #555);
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
     }
 
-    .submenu-grid {
-    grid-template-columns: 1fr;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid #333;
+      margin-bottom: 30px;
     }
 
     h1 {
-    font-size: 2rem;
+      font-size: 6rem;
+      margin-bottom: 15px;
+      color: #fff;
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
     }
 
     h2 {
-    font-size: 1.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #fff;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #333;
+      text-align: center;
     }
-    
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 15px 0;
+      color: #ddd;
+    }
+
+    .devs {
+      color: #bbb;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .description {
+      color: #aaa;
+      margin-bottom: 25px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.9rem;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .menu-item {
+      background: linear-gradient(to bottom right, #1a1a1a, #151515);
+      padding: 25px 20px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border-color: #555;
+      background: linear-gradient(to bottom right, #222, #1a1a1a);
+    }
+
+    .menu-item i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .menu-item span {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .submenu {
+      display: none;
+      background: linear-gradient(to bottom, #151515, #1a1a1a);
+      padding: 30px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .submenu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .submenu-item {
+      background-color: #111;
+      padding: 20px;
+      border-left: 4px solid #444;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+    }
+
+    .submenu-item:hover {
+      background-color: #1a1a1a;
+      border-left-color: #0af;
+      transform: translateX(5px);
+    }
+
+    .submenu-item i {
+      margin-right: 15px;
+      font-size: 1.5rem;
+      color: #ddd;
+    }
+
+    .details {
+      display: none;
+      background: linear-gradient(to bottom, #151515, #1a1a1a);
+      padding: 30px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .details p {
+      margin-bottom: 20px;
+      color: #ccc;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #222;
+      color: #fff;
+      padding: 12px 20px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background-color: #333;
+      border-color: #666;
+      transform: translateY(-2px);
+    }
+
+    .btn i {
+      margin-right: 8px;
+    }
+
+    .btn-primary {
+      background-color: #0066cc;
+      border-color: #0088ff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0088ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid #333;
+      margin-top: 50px;
+      color: #888;
+      font-size: 0.8rem;
+    }
+
+    .back-btn {
+      margin-bottom: 25px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .prompt-text {
+      background-color: #111;
+      padding: 20px;
+      border-left: 4px solid #5500ff;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: 4px;
+    }
+
+    .prompt-text:hover {
+      background-color: #1a1a1a;
+      transform: translateX(5px);
+    }
+
+    .copy-notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #0066cc;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .section-title i {
+      font-size: 2rem;
+      margin-right: 15px;
+      color: #fff;
+    }
+
     .search-container {
-        margin: 20px 15px;
+      margin: 20px auto;
+      max-width: 500px;
+      position: relative;
     }
-}
-</style>
+
+    .search-input {
+      width: 100%;
+      padding: 12px 45px 12px 15px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: #1a1a1a;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+    }
+
+    .search-results {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    .search-result-item {
+      padding: 12px 15px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+      transition: background-color 0.3s;
+    }
+
+    .search-result-item:hover {
+      background-color: #222;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #222;
+      color: #fff;
+      padding: 12px 15px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-btn:hover {
+      background-color: #333;
+      border-color: #666;
+      transform: translateY(-2px);
+    }
+
+    .footer-btn i {
+      margin-right: 8px;
+    }
+
+    .github-btn {
+      background-color: #222;
+    }
+
+    .gmail-btn {
+      background-color: #bb001b;
+      border-color: #d93025;
+    }
+
+    .gmail-btn:hover {
+      background-color: #d93025;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
+      .submenu-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .search-container {
+        margin: 20px 15px;
+      }
+      .footer-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <header>
+  <header>
     <h1>EDUTOOLS</h1>
     <div class="description">
-    UM CENTRAL DE ACESSO RÁPIDO A FERRAMENTAS EDUCACIONAIS, DE PRODUTIVIDADE, IA'S E DIVERSAS OUTRAS FUNCIONALIDADES.
+      UM CENTRAL DE ACESSO RÁPIDO A FERRAMENTAS EDUCACIONAIS, DE PRODUTIVIDADE, IAS E DIVERSAS OUTRAS FUNCIONALIDADES.
     </div>
-    
-    <div class="search-container">
-        <input type="text" class="search-input" id="search-input" placeholder="Buscar ferramentas...">
-        <i class="fas fa-search search-icon"></i>
-        <div class="search-results" id="search-results"></div>
-    </div>
-    </header>
 
-    <main>
+    <div class="search-container">
+      <input type="text" class="search-input" id="search-input" placeholder="Buscar ferramentas...">
+      <i class="fas fa-search search-icon"></i>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </header>
+
+  <main>
     <div id="menu-principal">
-        <h2>MENU PRINCIPAL</h2>
-        <div class="menu">
+      <h2>MENU PRINCIPAL</h2>
+      <div class="menu">
         <div class="menu-item" onclick="showSubmenu('submenu-ia')">
-            <i class="fas fa-robot"></i>
-            <span>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</span>
+          <i class="fas fa-robot"></i>
+          <span>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</span>
         </div>
         <div class="menu-item" onclick="showSubmenu('submenu-docs')">
-            <i class="fas fa-file-alt"></i>
-            <span>DOCUMENTOS E REFERÊNCIAS</span>
+          <i class="fas fa-file-alt"></i>
+          <span>DOCUMENTOS E REFERÊNCIAS</span>
         </div>
         <div class="menu-item" onclick="showSubmenu('submenu-prod')">
-            <i class="fas fa-briefcase"></i>
-            <span>PRODUTIVIDADE E ESCRITÓRIO</span>
+          <i class="fas fa-briefcase"></i>
+          <span>PRODUTIVIDADE E ESCRITÓRIO</span>
         </div>
         <div class="menu-item" onclick="showSubmenu('submenu-simul')">
-            <i class="fas fa-vial"></i>
-            <span>SIMULAÇÕES EDUCATIVAS</span>
+          <i class="fas fa-vial"></i>
+          <span>SIMULAÇÕES EDUCATIVAS</span>
         </div>
         <div class="menu-item" onclick="showSubmenu('submenu-prompts')">
-            <i class="fas fa-comment-dots"></i>
-            <span>PROMPTS AVANÇADOS PARA IA'S</span>
+          <i class="fas fa-comment-dots"></i>
+          <span>PROMPTS AVANÇADOS PARA IA'S</span>
         </div>
         <div class="menu-item" onclick="showSubmenu('submenu-edu')">
-            <i class="fas fa-graduation-cap"></i>
-            <span>FERRAMENTAS EDUCACIONAIS</span>
+          <i class="fas fa-graduation-cap"></i>
+          <span>FERRAMENTAS EDUCACIONAIS</span>
         </div>
         <div class="menu-item" onclick="showDetails('descricao-geral')">
-            <i class="fas fa-info-circle"></i>
-            <span>INFORMAÇÕES GERAIS</span>
+          <i class="fas fa-info-circle"></i>
+          <span>INFORMAÇÕES GERAIS</span>
         </div>
-        </div>
+      </div>
     </div>
 
     <div id="submenu-ia" class="submenu">
@@ -1050,121 +1064,129 @@ footer {
     </div>
     </main>
 
-    <footer>
+<footer>
     Desenvolvido por João Samuel & Maria Vitória<br>
     Versão 2.5 - 2025<br>
     Este site foi testado no Windows, Linux, Android e Iphone<br>
-    <a href="https://github.com/JSofc/EduTools" target="_blank" class="github-btn"><i class="fab fa-github"></i></a>
-    </footer>
+    
+    <div class="footer-buttons">
+        <a href="https://github.com/JSofc/EduTools" target="_blank" class="footer-btn github-btn">
+            <i class="fab fa-github"></i> EduTools
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=edutools.ofc@gmail.com" target="_blank" class="footer-btn gmail-btn">
+            <i class="fas fa-envelope"></i> edutools.ofc
+        </a>
+    </div>
+</footer>
 </div>
 
 <div id="copy-notification" class="copy-notification">Texto copiado para a área de transferência!</div>
 
 <script>
-function showSubmenu(submenuId) {
-    document.getElementById('menu-principal').style.display = 'none';
+  function showSubmenu(submenuId) {
+    document.getElementById("menu-principal").style.display = 'none';
     hideAllSubmenus();
     hideAllDetails();
     document.getElementById(submenuId).style.display = 'block';
-}
+  }
 
-function showDetails(detailsId) {
+  function showDetails(detailsId) {
     hideAllSubmenus();
     hideAllDetails();
     document.getElementById(detailsId).style.display = 'block';
-}
+  }
 
-function backToMain() {
+  function backToMain() {
     hideAllSubmenus();
     hideAllDetails();
-    document.getElementById('menu-principal').style.display = 'block';
-}
+    document.getElementById("menu-principal").style.display = 'block';
+  }
 
-function backToSubmenu(submenuId) {
+  function backToSubmenu(submenuId) {
     hideAllDetails();
     document.getElementById(submenuId).style.display = 'block';
-}
+  }
 
-function hideAllSubmenus() {
+  function hideAllSubmenus() {
     const submenus = document.querySelectorAll('.submenu');
     submenus.forEach(submenu => {
-        submenu.style.display = 'none';
+      submenu.style.display = 'none';
     });
-}
+  }
 
-function hideAllDetails() {
+  function hideAllDetails() {
     const details = document.querySelectorAll('.details');
     details.forEach(detail => {
-        detail.style.display = 'none';
+      detail.style.display = 'none';
     });
-}
+  }
 
-function copyToClipboard(text) {
+  function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        const notification = document.getElementById('copy-notification');
-        notification.style.display = 'block';
-        setTimeout(() => {
-            notification.style.display = 'none';
-        }, 2000);
+      const notification = document.getElementById('copy-notification');
+      notification.style.display = 'block';
+      setTimeout(() => {
+        notification.style.display = 'none';
+      }, 2000);
     });
-}
+  }
 
-function initSearch() {
+  function initSearch() {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
-    
+
     const searchableItems = [];
     document.querySelectorAll('.submenu-item').forEach(item => {
-        const text = item.querySelector('span').textContent;
-        const onclick = item.getAttribute('onclick');
-        const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
-        searchableItems.push({ text, detailId });
+      const text = item.querySelector('span').textContent;
+      const onclick = item.getAttribute('onclick');
+      const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
+      searchableItems.push({ text, detailId });
     });
-    
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase().trim();
-        searchResults.innerHTML = '';
-        
-        if (searchTerm.length < 2) {
-            searchResults.style.display = 'none';
-            return;
-        }
-        
-        const filteredItems = searchableItems.filter(item => 
-            item.text.toLowerCase().includes(searchTerm)
-        );
-        
-        if (filteredItems.length > 0) {
-            searchResults.style.display = 'block';
-            filteredItems.forEach(item => {
-                const resultItem = document.createElement('div');
-                resultItem.className = 'search-result-item';
-                resultItem.textContent = item.text;
-                resultItem.addEventListener('click', () => {
-                    showDetails(item.detailId);
-                    searchResults.style.display = 'none';
-                    searchInput.value = '';
-                });
-                searchResults.appendChild(resultItem);
-            });
-        } else {
-            searchResults.style.display = 'none';
-        }
-    });
-    
-    document.addEventListener('click', function(e) {
-        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-            searchResults.style.display = 'none';
-        }
-    });
-}
 
-document.addEventListener('DOMContentLoaded', function() {
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase().trim();
+      searchResults.innerHTML = '';
+
+      if (searchTerm.length < 2) {
+        searchResults.style.display = 'none';
+        return;
+      }
+
+      const filteredItems = searchableItems.filter(item =>
+        item.text.toLowerCase().includes(searchTerm)
+      );
+
+      if (filteredItems.length > 0) {
+        searchResults.style.display = 'block';
+        filteredItems.forEach(item => {
+          const resultItem = document.createElement('div');
+          resultItem.className = 'search-result-item';
+          resultItem.textContent = item.text;
+          resultItem.addEventListener('click', () => {
+            showDetails(item.detailId);
+            searchResults.style.display = 'none';
+            searchInput.value = "";
+          });
+          searchResults.appendChild(resultItem);
+        });
+      } else {
+        searchResults.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
     hideAllSubmenus();
     hideAllDetails();
     document.getElementById('menu-principal').style.display = 'block';
     initSearch();
-});
+  });
 </script>
 </body>
 </html>
