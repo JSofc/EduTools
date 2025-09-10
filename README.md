@@ -4,9 +4,9 @@
 ![Badge Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
 ![Badge Plataforma](https://img.shields.io/badge/plataforma-Windows-lightgrey)
 
-**EduTools** é um programa gratuito desenvolvido em **Batch Script (CMD)** que reúne, em um só lugar, ferramentas online para educação, produtividade e inteligência artificial.
+**EduTools** é um projeto gratuito desenvolvido em **HTML, CSS e JavaScript** que reúne, em um só lugar, ferramentas online para educação, produtividade e inteligência artificial.
 
-> Interface simples, funcional e acessível direto pelo Prompt de Comando do Windows.
+> Interface moderna, responsiva e acessível diretamente pelo navegador.
 
 ![Image](https://github.com/user-attachments/assets/5111cb69-f5fa-4ecd-9255-a7652fa1073f)
 
@@ -19,12 +19,14 @@
 - Editores e leitores de PDF online;
 - Ferramentas para criação de slides, artigos e documentos;
 - Simulações científicas interativas (Física, Química, Biologia e Matemática);
-- Suite Office online e gratuita (LibreOffice).
+- Suite Office online e gratuita;
+- Scripts para IA's.
 
-✔ Interface otimizada no CMD:
-- Menus organizados por categoria;
-- Design melhorado com cores e espaçamento;
-- Compatível com qualquer PC Windows (sem instalação adicional).
+✔ Recursos Principais:
+- Interface Web Moderna: Design escuro com gradientes e animações suaves;
+- Navegação Intuitiva: Menu categorizado e sistema de busca integrado;
+- Responsivo: Funciona perfeitamente em desktop, tablet e mobile;
+- Multiplataforma: Acessível em Windows, Linux, macOS, Android e iOS.
 
 ✔ Projeto:
 - Código **aberto** para a comunidade;
@@ -35,18 +37,14 @@
 
 ## 🖥️ Como usar
 
-1. Baixe o arquivo `.zip` do EduTools.
-2. Clque do lado direito e cliquem em *Extrair aqui*, logo após abra a pasta *EduTools* e abra o arquivo *.bat*.
-3. A interface será carregada automaticamente no terminal (CMD).
-4. Escolha uma letra e pressione **Enter** para abrir a ferramenta desejada.
-
-> Recomendado: ampliar a janela do CMD para melhor visualização.
+1. Baixe o arquivo `.html` do EduTools.
+2. Abra o arquivo que vocẽ será direcionado ao nosso 'site' no seu navegador.
 
 ---
 
 ## 🔗 Link para Download
 
-➡️ https://github.com/NobreRayook/EduTools/raw/main/EduTools_V1.1.zip
+➡️ 
 
 ---
 
@@ -55,7 +53,7 @@
 Tem sugestões, ideias ou quer contribuir com o projeto?  
 Entre em contato ou participe:
 
-**Discord:** @NobreRayook
+**Email:** edutools.ofc@gmail.com
 
 ---
 
