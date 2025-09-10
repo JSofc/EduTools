@@ -46,6 +46,21 @@
 
 ---
 
+## ❗ Aviso Legal
+
+- Este programa é **gratuito** e não deve ser vendido em nenhuma circunstância.  
+- Sinta-se à vontade para **divulgar**, usar e adaptar, mas **não comercialize**.  
+- Ao utilizar, você concorda em fazer uso responsável e ético das ferramentas acessadas.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT.  
+Consulte o arquivo `LICENSE` para mais detalhes.
+
+---
+
 ## 📬 Contato e Colaboração
 
 Tem sugestões, ideias ou quer contribuir com o projeto?  
@@ -55,22 +70,7 @@ Entre em contato:
 
 ---
 
-## ❗ Aviso Legal
-
-- Este programa é **gratuito** e não deve ser vendido em nenhuma circunstância.  
-- Sinta-se à vontade para **divulgar**, usar e adaptar, mas **não comercialize**.  
-- Ao utilizar, você concorda em fazer uso responsável e ético das ferramentas acessadas.
-
----
-
 ## 🙏 Agradecimentos
 
 Que Deus abençoe todos que fazem parte desta jornada.  
 **Use com moderação e sabedoria!** 💙
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT.  
-Consulte o arquivo `LICENSE` para mais detalhes.
