@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTools</title>
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     * {
     margin: 0;
@@ -14,54 +13,55 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-body {
-    background: linear-gradient(to bottom, #555, #000, #555);
-    color: #f0f0f0;
-    line-height: 1.6;
+body { 
+    background: linear-gradient(to bottom, #555, #000, #555); 
+    color: #f0f0f0; 
+    line-height: 1.6; 
     min-height: 100vh;
 }
 
-container {
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 1px solid #333;
-    margin-bottom: 30px;
+header { 
+    text-align: center; 
+    padding: 30px 0; 
+    border-bottom: 1px solid #333; 
+    margin-bottom: 30px; 
 }
 
-h1 {
+
+h1 { 
     font-size: 6rem;
-    margin-bottom: 15px;
-    color: #fff;
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+    margin-bottom: 15px; 
+    color: #fff; 
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25); 
 }
+
 
 h2 {
     font-size: 1.8rem;
-margin-bottom: 20px;
-color: #fff;
-padding-bottom: 10px;
-border-bottom: 1px solid #333;
-text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    text-align: center; 
 }
 
 h3 {
     font-size: 1.4rem;
     margin: 15px 0;
     color: #ddd;
-
 }
 
 .devs {
     color: #bbb;
     margin-bottom: 15px;
     font-size: 1.1rem;
-
 }
 
 .description {
@@ -72,7 +72,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.9rem;
-
 }
 
 .menu {
@@ -80,7 +79,6 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 40px;
-
 }
 
 .menu-item {
@@ -95,7 +93,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-min-height: 150px;
+    min-height: 150px;
 }
 
 .menu-item:hover {
@@ -143,8 +141,8 @@ min-height: 150px;
 
 .submenu-item:hover {
     background-color: #1a1a1a;
-border-left-color: #0af;
-transform: translateX(5px);
+    border-left-color: #0af;
+    transform: translateX(5px);
 }
 
 .submenu-item i {
@@ -190,7 +188,8 @@ details p {
     text-decoration: none;
     font-weight: 500;
 }
-btn:hover {
+
+.btn:hover {
     background-color: #333;
     border-color: #666;
     transform: translateY(-2px);
@@ -238,7 +237,8 @@ footer {
     background-color: #1a1a1a;
     transform: translateX(5px);
 }
-copy-notification {
+
+.copy-notification {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -251,25 +251,25 @@ copy-notification {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-section-title {
+.section-title {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
 }
 
-section-title i {
+.section-title i {
     font-size: 2rem;
     margin-right: 15px;
     color: #fff;
 }
 
-search-container {
+.search-container {
     margin: 20px auto;
     max-width: 500px;
     position: relative;
 }
 
-search-input {
+.search-input {
     width: 100%;
     padding: 12px 45px 12px 15px;
     border: 1px solid #333;
@@ -279,12 +279,12 @@ search-input {
     font-size: 1rem;
 }
 
-search-icon {
+.search-icon {
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-color: #aaa;
+    color: #aaa;
 }
 
 .search-results {
@@ -333,6 +333,7 @@ color: #aaa;
     transition: all 0.3s;
     text-decoration: none;
 }
+
 .github-btn:hover {
     background-color: #333;
     border-color: #666;
@@ -360,9 +361,9 @@ color: #aaa;
     h2 {
     font-size: 1.5rem;
     }
-
+    
     .search-container {
-    margin: 20px 15px;
+        margin: 20px 15px;
     }
 }
 </style>
@@ -374,762 +375,687 @@ color: #aaa;
     <div class="description">
     UM CENTRAL DE ACESSO RÁPIDO A FERRAMENTAS EDUCACIONAIS, DE PRODUTIVIDADE, IA'S E DIVERSAS OUTRAS FUNCIONALIDADES.
     </div>
-
+    
     <div class="search-container">
-<input type="text" class="search-input" id="search-input" placeholder="Buscar ferramentas...">
-
-<i class="fas fa-search search-icon"></i>
-
-<div class="search-results" id="search-results"></div>
-
-</div>
-
-</header>
-
-<main>
-
-<div id="menu-principal">
-
-<h2>MENU PRINCIPAL</h2>
-
-<div class="menu">
-
-<div class="menu-item" onclick="showSubmenu("submenu-ia")">
-
-<i class="fas fa-robot"></i>
-
-<span>FERRAMENTAS DE INTELIGÈNCIA ARTIFICIAL</span></div>
-
-<div class="menu-item" onclick="showSubmenu("submenu-docs")">
-
-<i class="fas fa-file-all"></i>
-
-<span>DOCUMENTOS E REFERÊNCIAS</span></div>
-
-<div class="menu-item" onclick="showSubmenu("submenu-prod")">
-
-<i class="fas fa-briefcase"></i>
-
-<span>PRODUTIVIDADE E ESCRITÓRIO</span></div>
-
-<div class="menu-item" onclick="showSubmenu("submenu-simul")">
-
-<i class="fas fa-vial"></i>
-
-<span>SIMULAÇÕES EDUCATIVAS</span></div>
-
-<div class="menu-item" onclick="showSubmenu("submenu-prompts")">
-
-<i class="fas fa-comment-dots"></i>
-
-<span>PROMPTS AVANÇADOS PARA IA'S</span></div>
-
-<div class="menu-item" onclick="showSubmenu("submenu-edu")">
-
-<i class="fas fa-graduation-cap"></i>
-
-<span>FERRAMENTAS EDUCACIONAIL</span></div>
-
-<div class="menu-item" onclick="showDetails("descricao-geral")">
-
-<i class="fas fa-info-circle"></i>
-
-<span>INFORMAÇÕES GERAIS</span></div>
-
-</div>
-
-</div>
-
-<div id="submenu-ia" class="submenu">
-
-<div class="back-btn btn" onclick="backToMain()"></i class="fas fa-arrow-left"></i>
-
-VOLTAR</div>
-
-<div class="section-title">
-<i class="fas fa-robot"></i>
-<h2>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</h2>
-</div>
-<div class="submenu-grid">
-<div class="submenu-item" onclick="showDetails('detalhes-napkin')">
-    <i class="fas fa-chart-bar"></i>
-    <span>NAPKIN A1 - Relatórios, figuras e tabelas</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-gamma')">
-    <i class="fas fa-presentation"></i>
-    <span>GAMMA A1 - Slides dinâmicos</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-flexclip')">
-    <i class="fas fa-chart-pie"></i>
-    <span>FLEXCLIP - Gráficos e infográficos</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-dreamina')">
-    <i class="fas fa-images"></i>
-    <span>DREAMINA - Imagens e vídeos</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-copilot')">
-    <i class="fas fa-search"></i>
-    <span>COPILOT - Pesquisa com precisão</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-deepseek')">
-    <i class="fas fa-calculator"></i>
-    <span>DEEPSEEK - Cálculos avançados e pesquisa</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-chatpdf')">
-    <i class="fas fa-file.pdf"></i>
-    <span>CHATPDF - Leitor inteligente de PDFs</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-chatgpt')">
-    <i class="fas fa-comments"></i>
-    <span>CHATGPT - Conversa con IA</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-gemini')">
-    <i class="fab fa-google"></i>
-    <span>GEMINI - Assistente do Google</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-archimeds')">
-    <i class="fas fa-heartbeat"></i>
-    <span>ARCHIMEDS - Ferramenta de estudo médico</span>
-</div>
-</div>
-
-<div id="detalhes-napkin" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-chart-bar"></i>
-    <h2>NAPKIN AI - DETALHES</h2>
+        <input type="text" class="search-input" id="search-input" placeholder="Buscar ferramentas...">
+        <i class="fas fa-search search-icon"></i>
+        <div class="search-results" id="search-results"></div>
     </div>
-    <p>Ferramenta para criação de relatórios, figuras e tabelas com IA. Versão gratuita com limites diários.</p>
-    <div class="btn-container">
-    <a href="https://www.napkin.ai/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-alt"></i> ACESSAR</a>
-    <div class="btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-    </div>
+    </header>
+
+    <main>
+    <div id="menu-principal">
+        <h2>MENU PRINCIPAL</h2>
+        <div class="menu">
+        <div class="menu-item" onclick="showSubmenu('submenu-ia')">
+            <i class="fas fa-robot"></i>
+            <span>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</span>
+        </div>
+        <div class="menu-item" onclick="showSubmenu('submenu-docs')">
+            <i class="fas fa-file-alt"></i>
+            <span>DOCUMENTOS E REFERÊNCIAS</span>
+        </div>
+        <div class="menu-item" onclick="showSubmenu('submenu-prod')">
+            <i class="fas fa-briefcase"></i>
+            <span>PRODUTIVIDADE E ESCRITÓRIO</span>
+        </div>
+        <div class="menu-item" onclick="showSubmenu('submenu-simul')">
+            <i class="fas fa-vial"></i>
+            <span>SIMULAÇÕES EDUCATIVAS</span>
+        </div>
+        <div class="menu-item" onclick="showSubmenu('submenu-prompts')">
+            <i class="fas fa-comment-dots"></i>
+            <span>PROMPTS AVANÇADOS PARA IA'S</span>
+        </div>
+        <div class="menu-item" onclick="showSubmenu('submenu-edu')">
+            <i class="fas fa-graduation-cap"></i>
+            <span>FERRAMENTAS EDUCACIONAIS</span>
+        </div>
+        <div class="menu-item" onclick="showDetails('descricao-geral')">
+            <i class="fas fa-info-circle"></i>
+            <span>INFORMAÇÕES GERAIS</span>
+        </div>
+        </div>
     </div>
 
-<div id="detalhes-gamma" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-presentation"></i>
-    <h2>GAMMA AI - DETALHES</h2>
-    </div>
-    <p>Criação de apresentações automáticas con design responsivo. Templates profissionais adaptáveis.</p>
-    <div class="btn-container">
-    <a href="https://gamma.app/pt-br" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-alt"></i> ACESSAR</a>
-    <div class="btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-    </div>
-    </div>
-
-<div id="detalhes-flexclip" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-chart-pie"></i>
-    <h2>FLEXCLIP - DETALHES</h2>
-    </div>
-<p>Editor online para criação de gráficos, vídeos e infográficos con biblioteca de 
-templates.</p> 
- <div class="btn-container"> 
- <a href="https://www.flexclip.com/pt/" target="_blank" class="btn btn-primary"><i 
-class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-dreamina" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-images"></i> 
- <h2>DREAMINA - DETALHES</h2> 
- </div> 
- <p>Plataforma de geração de imagens e vídeos via IA para conteúdo criativo con 
-integração ao CapCut.</p> 
- <div class="btn-container"> 
- <a href="https://dreamina.capcut.com/ai-tool/generate" target="_blank" class="btn 
-btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-copilot" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-search"></i> 
- <h2>COPILOT - DETALHES</h2> 
- </div> 
- <p>Assistente de IA integrado ao Bing para pesquisas contextualizadas con geração 
-de código.</p> 
- <div class="btn-container"> 
- <a href="https://copilot.microsoft.com/" target="_blank" class="btn btn-primary"><i 
-class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div>
-
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-deepseek" class="details">
-<div class="back-btn btn" onclick="backToSubmenu(submenu-ia')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-calculator"></i>
-<h2>DEEPSEEK - DETALHES</h2>
-</div>
-<p>Assistente avançado para cálculos matemáticos, programação e análise de dados con suporte a upload.</p>
-<div class="btn-container">
-<a href="https://www.deepseek.com/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu(submenu-ia')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-chatpdf" class="details">
-<div class="back-btn btn" onclick="backToSubmenu(submenu-ia')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-file-pdf"></i>
-<h2>CHATPDF - DETALHES</h2>
-</div>
-<p>Leitor inteligente de PDFs con extração de informações via IA e resumo automático.</p>
-<div class="btn-container">
-<a href="https://www.chatpdf.com/pt" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu(submenu-ia')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-chatgpt" class="details">
-
-<div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-comments"></i>
-<h2>CHATGPT - DETALHES</h2>
-</div>
-<p>Assistente de IA para conversas naturais и resolução multidisciplinar con memória de contexto.</p>
-<div class="btn-container">
-<a href="https://chatgpt.com/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-gemini" class="details">
-<div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fab fa-google"></i>
-<h2>GEMINI - DETALHES</h2>
-</div>
-<p>Assistente de IA do Google con integração ao ecossistema de apps e geração multimodal.</p>
-<div class="btn-container">
-<a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-archimeds" class="details">
-<div class="back-btn btn" onclick="backToSubmenu("submenu-ia")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-heartbeat"></i>
-<h2>ARCHIMEDS - DETALHES</h2>
-</div>
-<p>Plataforma especializada em estudos médicos con IA para diagnóstico e pesquisa clínica.</p>
-
-<div class="btn-container">
-    <a href="https://app.archimeds.co/welcome" target="_blank" class="btn btn-primary"></class="fas fa-external-link-alt"></i></i></b>
-    <div class="btn" onclick="backToSubmenu("submenu-id")"></i class="fas fa-arrow-left"></i></b>
-    VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i></b>
-    PRINCIPAL</div>
-    </div>
+    <div id="submenu-ia" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-robot"></i>
+        <h2>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</h2>
+        </div>
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('detalhes-napkin')">
+            <i class="fas fa-chart-bar"></i>
+            <span>NAPKIN AI - Relatórios, figuras e tabelas</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-gamma')">
+            <i class="fas fa-presentation"></i>
+            <span>GAMMA AI - Slides dinâmicos</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-flexclip')">
+            <i class="fas fa-chart-pie"></i>
+            <span>FLEXCLIP - Gráficos e infográficos</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-dreamina')">
+            <i class="fas fa-images"></i>
+            <span>DREAMINA - Imagens e vídeos</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-copilot')">
+            <i class="fas fa-search"></i>
+            <span>COPILOT - Pesquisa com precisão</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-deepseek')">
+            <i class="fas fa-calculator"></i>
+            <span>DEEPSEEK - Cálculos avançados e pesquisa</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-chatpdf')">
+            <i class="fas fa-file-pdf"></i>
+            <span>CHATPDF - Leitor inteligente de PDFs</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-chatgpt')">
+            <i class="fas fa-comments"></i>
+            <span>CHATGPT - Conversa con IA</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-gemini')">
+            <i class="fab fa-google"></i>
+            <span>GEMINI - Assistente do Google</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-archimeds')">
+            <i class="fas fa-heartbeat"></i>
+            <span>ARCHIMEDS - Ferramenta de estudo médico</span>
+        </div>
+        </div>
     </div>
 
-<div id="submenu-docs" class="submenu">
-    <div class="back-btn btn" onclick="backToMain()"></i class="fas fa-arrow-left"></i></b>
-VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-file-alt"></i></b>
-    <h2>DOCUMENTOS E REFERÊNCIAS</h2>
-    </div>
-    <div class="submenu-grid">
-    <div class="submenu-item" onclick="showDetails('detalhes-stirling')">
-    <i class="fas fa-file-pdf"></i></b>
-    <span>STIRLING PDF - Ferramentas para PDFs</span>
-    </div>
-    <div class="submenu-item" onclick="showDetails('detalhes-costorm')">
-    <i class="fas fa-newspaper"></i></b>
-    <span>CO-STORM - Artigos con referências</span>
-    </div>
-    <div class="submenu-item" onclick="showDetails('detalhes-docs')">
-    <i class="fas fa-file-word"></i></b>
-    <span>GOOGLE DOCS - Editor de documentos</span>
-    </div>
-    <div class="submenu-item" onclick="showDetails('detalhes-academico')">
-    <i class="fas fa-graduation-cap"></i></b>
-    <span>GOOGLE ACADÊMICO - Pesquisa acadêmica</span>
-    </div>
+    <div id="detalhes-napkin" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-chart-bar"></i>
+        <h2>NAPKIN AI - DETALHES</h2>
+        </div>
+        <p>Ferramenta para criação de relatórios, figuras e tabelas com IA. Versão gratuita com limites diários.</p>
+        <div class="btn-container">
+        <a href="https://www.napkin.ai/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-<div id="detalhes-stirling" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-docs")"></i class="fas fa-arrow-left"></i></b>
-    VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-file-pdf"></i></b>
-    <h2>STIRLING PDF - DETALHES</h2>
-    </div>
-    <p>Suíte completa para manipulação de PDFs con processamento local и privacidade garantida.</p>
-
-<div class="btn-container"> 
- <a href="https://stirlingpdf.io/?lang=pt_BR" target="_blank" class="btn btn-primary"><i 
-class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-costorm" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-newspaper"></i> 
- <h2>CO-STORM - DETALHES</h2> 
- </div> 
- <p>Gerador de artigos acadêmicos con fontes verificadas e formatação automática em 
-normas ABNT/APA.</p> 
- <div class="btn-container"> 
- <a href="https://storm.genie.stanford.edu/" target="_blank" class="btn btn-primary"><i 
-class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-docs" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-file-word"></i> 
- <h2>GOOGLE DOCS - DETALHES</h2> 
- </div> 
- <p>Editor de documentos online con colaboração em tempo real e histórico de 
-versões.</p> 
- <div class="btn-container"> 
- <a href="https://docs.google.com/document/u/0/?hl=pt-BR" target="_blank" class="btn 
-btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div>
-
-</div>
-
-<div id="detalhes-academico" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-docs")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-graduation-cap"></i>
-    <h2>GOOGLE ACADÉMICO - DETALHES</h2>
-    </div>
-    <p>Ferramenta de pesquisa de literatura científica con filtros avançados e artigos peer-reviewed.</p>
-    <div class="btn-container">
-    <a href="https://scholar.google.com/?hl=pt-BR" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-    <div class="btn" onclick="backToSubmenu("submenu-docs")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-    </div>
+    <div id="detalhes-gamma" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-presentation"></i>
+        <h2>GAMMA AI - DETALHES</h2>
+        </div>
+        <p>Criação de apresentações automáticas con design responsivo. Templates profissionais adaptáveis.</p>
+        <div class="btn-container">
+        <a href="https://gamma.app/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-<div id="submenu-prod" class="submenu">
-    <div class="back-btn btn" onclick="backToMain()"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-briefcase"></i>
-    <h2>PRODUTIVIDADE E ESCRITÓRIO</h2>
-    </div>
-    <div class="submenu-grid">
-    <div class="submenu-item" onclick="showDetails("detalhes-libreoffice")">
-    <i class="fas fa-office-building"></i>
-    <span>LIBREOFFICE - Suite Office código-aberto</span>
-    </div>
-    <div class="submenu-item" onclick="showDetails("detalhes-calculadora")">
-    <i class="fas fa-calculator"></i>
-    <span>CALCULADORA - Calculadora do Windows</span>
-    </div>
-    <div class="submenu-item" onclick="showDetails("detalhes-notion")">
-    <i class="fas fa-sticky-note"></i>
-    <span>NOTION - Organização e planejamento</span>
-    </div>
+    <div id="detalhes-flexclip" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-chart-pie"></i>
+        <h2>FLEXCLIP - DETALHES</h2>
+        </div>
+        <p>Editor online para criação de gráficos, vídeos e infográficos con biblioteca de templates.</p>
+        <div class="btn-container">
+        <a href="https://www.flexclip.com/pt/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-<div id="detalhes-libreoffice" class="details">
-
-<div class="back-btn btn" onclick="backToSubmenu("submenu-prod")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-office-building"></i>
-<h2>LIBREOFFICE - DETALHES</h2>
-</div>
-<p>Suite office gratuita e de código aberto compatível con formatos Microsoft (DOCX, XLSX, PPTX).</p>
-<div class="btn-container">
-<a href="https://pt-br.libreoffice.org/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu("submenu-prod")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-calculadora" class="details">
-<div class="back-btn btn" onclick="backToSubmenu("submenu-prod")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-calculator"></i>
-<h2>CALCULADORA - DETALHES</h2>
-</div>
-<p>Calculadora nativa do Windows para operações matemáticas básicas e científicas offline.</p>
-<div class="btn-container">
-<div class="btn btn-primary" onclick="alert("Esta função abre a calculadora do sistema. No navegador, não é possível abrir aplicativos locais.")"></i class="fas fa-external-link-all"></i> ACESSAR</div>
-<div class="btn" onclick="backToSubmenu("submenu-prod")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-notion" class="details">
-<div class="back-btn btn" onclick="backToSubmenu("submenu-prod")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-sticky-note"></i>
-<h2>NOTION - DETALHES</h2>
-</div>
-
-<p>Plataforma all-in-one para organização, notas e gerenciamento de projetos con templates.</p>
-<div class="btn-container">
-<a href="https://www.notion.so/" target="_blank" class="btn btn-primary"></ class="fas fa-external-link-all"></i></i></b> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu("submenu-prod")"></ class="fas fa-arrow-left"></i></i></OLTAR</div>
-<div class="btn" onclick="backToMain()"></ class="fas fa-home"></i></i></ENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="submenu-simul" class="submenu">
-<div class="back-btn btn" onclick="backToMain()"></ class="fas fa-arrow-left"></i></OLTAR</div>
-<div class="section-title">
-<i class="fas fa-vial"></i></i>
-<h2>SIMULAÇÕES EDUCATIVAS</h2>
-</div>
-<div class="submenu-grid">
-<div class="submenu-item" onclick="showDetails("detalhes-phet")">
-<i class="fas fa-flask"></i></i>
-<span>PHET SIMULAÇÕES - Simulações interativas</span>
-</div>
-</div>
-
-<div id="detalhes-phet" class="details">
-<div class="back-btn btn" onclick="backToSubmenu("submenu-simul")"></ class="fas fa-arrow-left"></i></OLTAR</div>
-<div class="section-title">
-<i class="fas fa-flask"></i></i>
-<h2>PHET SIMULAÇÕES - DETALHES</h2>
-</div>
-<p>Plataforma de simulações interativas para ensino de ciências e matemática con conteúdo em português.</p>
-<div class="btn-container">
-<a href="https://phet.colorado.edu/pt_BR/" target="_blank" class="btn btn-primary"></ class="fas fa-external-link-all"></i></i></CESSAR</a>
-<div class="btn" onclick="backToSubmenu("submenu-simul")"></ class="fas fa-arrow-left"></i></OLTAR</div>
-<div class="btn" onclick="backToMain()"></ class="fas fa-home"></i></ENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="submenu-prompts" class="submenu">  
-<div class="back-btn btn" onclick="backToMain()"></class="fas fa-arrow-left"></i></VOLTAR</div>  
-<div class="section-title">  
-<i class="fas fa-comment-dots"></i>  
-<h2>PROMPTS AVANÇADOS PARA IA'S</h2>  
-</div>  
-<p>Utilize esses prompts para extrair o máximo potencial das IAs, economizando tempo e melhorando resultados.</p>  
-
-<div class="submenu-grid">  
-<div class="submenu-item" onclick="showDetails('prompts-motivacionais')">  
-<i class="fas fa-fire"></i>  
-<span>PROMPTS MOTIVACIONAIS</span>  
-</div>  
-<div class="submenu-item" onclick="showDetails('prompts-estudar')">  
-<i class="fas fa-book"></i>  
-<span>PROMPTS PARA ESTUDAR</span>  
-</div>  
-<div class="submenu-item" onclick="showDetails('prompts-produtividade')">  
-<i class="fas fa-tasks"></i>  
-<span>PROMPTS PARA PRODUTIVIDADE</span>  
-</div>  
-</div>  
-</div>  
-
-<div id="prompts-motivacionais" class="details">  
-<div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"></class="fas fa-arrow-left"></i></VOLTAR</div>  
-<div class="section-title">  
-<i class="fas fa-fire"></i>  
-<h2>PROMPTS MOTIVACIONAIS</h2>  
-</div>  
-
-<div class="prompt-text" onclick="copyToClipboard('Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero.')">  
-"Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero."  
-</div>  
-
-<div class="prompt-text" onclick="copyToClipboard('Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois.')">  
-"Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois."  
-</div>
-
-<div class="prompt-text" onclick="copyToClipboard('Me conte algo que me faça ver que recomeçar hoje é o que vai me salvar amanhã.')">
-    "Me conte algo que me faça ver que recomeçar hoje é o que vai me salvar amanhã."</div>
-    <div class="btn-container">
-    <div class="btn" onclick="backToSubmenu('submenu-prompts')"></class="fas fa-arrow-left"></i></OLTAR</div>
-    <div class="btn" onclick="backToMain()"></class="fas fa-home"></i></ENU PRINCIPAL</div>
-    </div>
-    </div>
-<div id="prompts-estudar" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"></class="fas fa-arrow-left"></i></OLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-book"></i>
-    <h2>PROMPTS PARA ESTUDAR</h2>
-    </div>
-    <div class="prompt-text" onclick="copyToClipboard('Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele.')'>
-    "Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele."
-    </div>
-    <div class="prompt-text" onclick="copyToClipboard('Sou iniciante em [tópico]. Crie um roteiro passo a passo do iniciante ao avançado.')'>
-    "Sou iniciante em [tópico]. Crie um roteiro passo a passo do iniciante ao avançado."
-    </div>
-    <div class="prompt-text" onclick="copyToClipboard('Aja como professor de [assunto]. Foque nos pontos mais prováveis de cair na prova.')'>
-    "Aja como professor de [assunto]. Foque nos pontos mais prováveis de cair na prova."
-    </div>
-    <div class="btn-container">
-    <div class="btn" onclick="backToSubmenu('submenu-prompts')"></class="fas fa-arrow-left"></i></OLTAR</div>
-    <div class="btn" onclick="backToMain()"></class="fas fa-home"></i></ENU PRINCIPAL</div>
-    </div>
+    <div id="detalhes-dreamina" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-images"></i>
+        <h2>DREAMINA - DETALHES</h2>
+        </div>
+        <p>Plataforma de geração de imagens e vídeos via IA para conteúdo criativo con integração ao CapCut.</p>
+        <div class="btn-container">
+        <a href="https://dreamina.capcut.com/ai-tool/generate" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-</div>
-
-<div id="prompts-produtividade" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-tasks"></i>
-    <h2>PROMPTS PARA PRODUTIVIDADE</h2>
+    <div id="detalhes-copilot" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-search"></i>
+        <h2>COPILOT - DETALHES</h2>
+        </div>
+        <p>Assistente de IA integrado ao Bing para pesquisas contextualizadas con geração de código.</p>
+        <div class="btn-container">
+        <a href="https://copilot.microsoft.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-    <div class="prompt-text" onclick="copyToClipboard('Crie um plano de 4 semanas para aumentar minha produtividade em [área].')">
-    "Crie um plano de 4 semanas para aumentar minha produtividade em [área]."
+    <div id="detalhes-deepseek" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-calculator"></i>
+        <h2>DEEPSEEK - DETALHES</h2>
+        </div>
+        <p>Assistente avançado para cálculos matemáticos, programação e análise de dados con suporte a upload.</p>
+        <div class="btn-container">
+        <a href="https://www.deepseek.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-    <div class="prompt-text" onclick="copyToClipboard('Desenvolva um sistema de organização pessoal integrando áreas profissionais e pessoais.')">
-    "Desenvolva um sistema de organização pessoal integrando áreas profissionais e pessoais."
+    <div id="detalhes-chatpdf" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-file-pdf"></i>
+        <h2>CHATPDF - DETALHES</h2>
+        </div>
+        <p>Leitor inteligente de PDFs con extração de informações via IA e resumo automático.</p>
+        <div class="btn-container">
+        <a href="https://www.chatpdf.com/pt" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-    <div class="prompt-text" onclick="copyToClipboard('Aja como um coach de produtividade. Analise minha rotina e proponha 5 mudanças.')">
-    "Aja como um coach de produtividade. Analise minha rotina e proponha 5 mudanças."
+    <div id="detalhes-chatgpt" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-comments"></i>
+        <h2>CHATGPT - DETALHES</h2>
+        </div>
+        <p>Assistente de IA para conversas naturais e resolução multidisciplinar con memória de contexto.</p>
+        <div class="btn-container">
+        <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-    <div class="btn-container">
-    <div class="btn" onclick="backToSubmenu('submenu-prompts')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
+    <div id="detalhes-gemini" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fab fa-google"></i>
+        <h2>GEMINI - DETALHES</h2>
+        </div>
+        <p>Assistente de IA do Google con integração ao ecossistema de apps e geração multimodal.</p>
+        <div class="btn-container">
+        <a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
+
+    <div id="detalhes-archimeds" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-heartbeat"></i>
+        <h2>ARCHIMEDS - DETALHES</h2>
+        </div>
+        <p>Plataforma especializada em estudos médicos con IA para diagnóstico e pesquisa clínica.</p>
+        <div class="btn-container">
+        <a href="https://app.archimeds.co/welcome" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
 
-<div id="submenu-edu" class="submenu">
-    <div class="back-btn btn" onclick="backToMain()"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-graduation-cap"></i>
-    <h2>FERRAMENTAS EDUCACIONAIS</h2>
+    <div id="submenu-docs" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-file-alt"></i>
+        <h2>DOCUMENTOS E REFERÊNCIAS</h2>
+        </div>
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('detalhes-stirling')">
+            <i class="fas fa-file-pdf"></i>
+            <span>STIRLING PDF - Ferramentas para PDFs</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-costorm')">
+            <i class="fas fa-newspaper"></i>
+            <span>CO-STORM - Artigos con referências</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-docs')">
+            <i class="fas fa-file-word"></i>
+            <span>GOOGLE DOCS - Editor de documentos</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-academico')">
+            <i class="fas fa-graduation-cap"></i>
+            <span>GOOGLE ACADÉMICO - Pesquisa acadêmica</span>
+        </div>
+        </div>
     </div>
-    <div class="submenu-grid">
-    <div class="submenu-item" onclick="showDetails('detalhes-khan')">
-    <i class="fas fa-university"></i>
-    <span>KHAN ACADEMY - Cursos gratuitos</span>
+
+    <div id="detalhes-stirling" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-file-pdf"></i>
+        <h2>STIRLING PDF - DETALHES</h2>
+        </div>
+        <p>Suíte completa para manipulação de PDFs con processamento local e privacidade garantida.</p>
+        <div class="btn-container">
+        <a href="https://stirlingpdf.io/?lang=pt_BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
-    <div class="submenu-item" onclick="showDetails('detalhes-duolingo')">
-    <i class="fas fa-language"></i>
 
-<span>DUOLINGO - Aprendizado de idiomas</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-wolfram')">
-    <i class="fas fa-square-root-all"></i>
-    <span>WOLFRAM ALPHA - Resolução matemática</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-anki')">
-    <i class="fas fa-layer-group"></i>
-    <span>ANKI - Flashcards intelligentes</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-quizlet')">
-    <i class="fas fa-puzzle-piece"></i>
-    <span>QUIZLET - Ferramentas de estudo</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-brainly')">
-    <i class="fas fa-users"></i>
-    <span>BRAINLY - Comunidade estudantil</span>
-</div>
-<div class="submenu-item" onclick="showDetails('detalhes-geogebra')">
-    <i class="fas fa-shapes"></i>
-    <span>GEOGEBRA - Matemática interativa</span>
-</div>
-</div>
-</div>
-
-<div id="detalhes-khan" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-university"></i>
-    <h2>KHAN ACADEMY - DETALHES</h2>
+    <div id="detalhes-costorm" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-newspaper"></i>
+        <h2>CO-STORM - DETALHES</h2>
+        </div>
+        <p>Gerador de artigos acadêmicos con fontes verificadas e formatação automática em normas ABNT/APA.</p>
+        <div class="btn-container">
+        <a href="https://storm.genie.stanford.edu/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
-    <p>Plataforma gratuita con cursos de matemática, ciências e programação. Conteúdo em português con exercícios.</p>
-    <div class="btn-container">
-    <a href="https://pt.khanacademy.org/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-    <div class="btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
+
+    <div id="detalhes-docs" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-file-word"></i>
+        <h2>GOOGLE DOCS - DETALHES</h2>
+        </div>
+        <p>Editor de documentos online con colaboração em tempo real e histórico de versões.</p>
+        <div class="btn-container">
+        <a href="https://docs.google.com/document/u/0/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
-</div>
 
-<div id="detalhes-duolingo" class="details">
-
-<div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-language"></i>
-<h2>DUOLINGO - DETALHES</h2>
-</div>
-<p>Aplicativo para aprender idiomas con lições curtas e gamificação. Suporta mais de 30 idiomas.</p>
-<div class="btn-container">
-<a href="https://pt.duolingo.com/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-wolfram" class="details">
-<div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-square-root-all"></i>
-<h2>WOLFRAM ALPHA - DETALHES</h2>
-</div>
-<p>Ferramenta computacional para resolver problemas de matemática, física e engenharia con passo a passo.</p>
-<div class="btn-container">
-<a href="https://www.wolframalpha.com/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-<div class="btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
-</div>
-</div>
-
-<div id="detalhes-anki" class="details">
-<div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-<div class="section-title">
-<i class="fas fa-layer-group"></i>
-<h2>ANKI - DETALHES</h2>
-</div>
-<p>Sistema de repetição espaçada para memorização eficiente con suporte a imagens, áudio e formatação avançada.</p>
-
-<div class="btn-container"> 
- <a href="https://apps.ankiweb.net/" target="_blank" class="btn btn-primary"><i 
-class="fas fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-quizlet" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-puzzle-piece"></i> 
- <h2>QUIZLET - DETALHES</h2> 
- </div> 
- <p>Plataforma de estudo con flashcards, jogos e testes para diversas disciplinas e 
-níveis de ensino.</p> 
- <div class="btn-container"> 
- <a href="https://quizlet.com/pt-br" target="_blank" class="btn btn-primary"><i class="fas 
-fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div> 
- </div> 
- 
- <div id="detalhes-brainly" class="details"> 
- <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="section-title"> 
- <i class="fas fa-users"></i> 
- <h2>BRAINLY - DETALHES</h2> 
- </div> 
- <p>Comunidade de estudantes para compartilhar conhecimento e tirar dúvidas em 
-diversas disciplinas escolares.</p> 
- <div class="btn-container"> 
- <a href="https://brainly.com.br/" target="_blank" class="btn btn-primary"><i class="fas 
-fa-external-link-alt"></i> ACESSAR</a> 
- <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas 
-fa-arrow-left"></i> VOLTAR</div> 
- <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU 
-PRINCIPAL</div> 
- </div>
-
-</div>
-
-<div id="detalhes-geogebra" class="details">
-    <div class="back-btn btn" onclick="backToSubmenu("submenu-edu")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-shapes"></i>
-    <h2>GEOGEBRA - DETALHES</h2>
+    <div id="detalhes-academico" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>GOOGLE ACADÉMICO - DETALHES</h2>
+        </div>
+        <p>Ferramenta de pesquisa de literatura científica con filtros avançados e artigos peer-reviewed.</p>
+        <div class="btn-container">
+        <a href="https://scholar.google.com/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
-    <p>Software matemático interativo para geometria, álgebra e cálculo. Versões para desktop e online.</p>
-    <div class="btn-container">
-    <a href="https://www.geogebra.org/" target="_blank" class="btn btn-primary"></i class="fas fa-external-link-all"></i> ACESSAR</a>
-    <div class="btn" onclick="backToSubmenu("submenu-edu")"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="btn" onclick="backToMain()"></i class="fas fa-home"></i> MENU PRINCIPAL</div>
+
+    <div id="submenu-prod" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-briefcase"></i>
+        <h2>PRODUTIVIDADE E ESCRITÓRIO</h2>
+        </div>
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('detalhes-libreoffice')">
+            <i class="fas fa-office-building"></i>
+            <span>LIBREOFFICE - Suite Office código-aberto</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-calculadora')">
+            <i class="fas fa-calculator"></i>
+            <span>CALCULADORA - Calculadora do Windows</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-notion')">
+            <i class="fas fa-sticky-note"></i>
+            <span>NOTION - Organização e planejamento</span>
+        </div>
+        </div>
     </div>
-</div>
 
-<div id="descricao-geral" class="details">
-    <div class="back-btn btn" onclick="backToMain()"></i class="fas fa-arrow-left"></i> VOLTAR</div>
-    <div class="section-title">
-    <i class="fas fa-info-circle"></i>
-    <h2>EDUTOOLS - V2.5 (2025) - DESCRIÇÃO DAS FERRAMENTAS</h2>
+    <div id="detalhes-libreoffice" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-office-building"></i>
+        <h2>LIBREOFFICE - DETALHES</h2>
+        </div>
+        <p>Suíte office gratuita e de código aberto compatível con formatos Microsoft (DOCX, XLSX, PPTX).</p>
+        <div class="btn-container">
+        <a href="https://pt-br.libreoffice.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
     </div>
-    <p><strong>NAPKIN AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
-    <p><strong>GAMMA AI:</strong> Criação de apresentações automáticas</p>
-    <p><strong>FLEXCLIP:</strong> Editor para gráficos e infográficos</p>
-    <p><strong>DREAMINA:</strong> Geração de imagens e vídeos via IA</p>
-    <p><strong>COPILOT:</strong> Assistente de IA para pesquisas</p>
-    <p><strong>DEEPSEEK:</strong> Cálculos matemáticos e análise de dados</p>
-    <p><strong>STIRLING PDF:</strong> Manipulação de PDFs con privacidade</p>
-    <p><strong>CO-STORM:</strong> Gerador de artigos acadêmicos</p>
-    <p><strong>LIBREOFFICE:</strong> Suite Office código-aberto</p>
-    <p><strong>NOTION:</strong> Plataforma para organização e planejamento</p>
-    <p><strong>CHATPDF:</strong> Leitor inteligente de PDFs</p>
-    <p><strong>PHET SIMULAÇÕES:</strong> Simulações interativas educativas</p>
-    <p><strong>GOOGLE DOCS:</strong> Editor de documentos online</p>
-    <p><strong>GOOGLE ACADÊMICO:</strong> Pesquisa de literatura científica</p>
-    <p><strong>CHATGPT:</strong> Assistente para conversas naturais</p>
-    <p><strong>GEMINI:</strong> Assistente do Google integrado</p>
-    <p><strong>ARCHIMEDS: </strong> Plataforma para estudos médicos</p>
-    <p><strong>KHAN ACADEMY: </strong> Cursos gratuitos online</p>
 
-<p><strong>DUOLINGO: </strong> Aprendizado de idiomas</p>
-<p><strong>WOLFRAM ALPHA: </strong> Resolução de problemas matemáticos</p>
-<p><strong>ANKI: </strong> Flashcards para memorização</p>
-<p><strong>QUIZLET: </strong> Ferramentas de estudo gamificadas</p>
-<p><strong>BRAINLY: </strong> Comunidade de estudantes</p>
-<p><strong>GEOGEBRA: </strong> Matemática interativa</p>
+    <div id="detalhes-calculadora" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-calculator"></i>
+        <h2>CALCULADORA - DETALHES</h2>
+        </div>
+        <p>Calculadora nativa do Windows para operações matemáticas básicas e científicas offline.</p>
+        <div class="btn-container">
+        <div class="btn btn-primary" onclick="alert('Esta função abre a calculadora do sistema. No navegador, não é possível abrir aplicativos locais.')"><i class="fas fa-external-link-alt"></i> ACESSAR</div>
+        <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
 
-</div>
-</main>
+    <div id="detalhes-notion" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-sticky-note"></i>
+        <h2>NOTION - DETALHES</h2>
+        </div>
+        <p>Plataforma all-in-one para organização, notas e gerenciamento de projetos con templates.</p>
+        <div class="btn-container">
+        <a href="https://www.notion.so/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
 
-<footer>
-Desenvolvido por João Samuel & Maria Vitória<br>
-Versão 2.5 - 2025<br>
-Este site foi testado no Windows, Linux, Android e Iphone<br>
-<a href="https://github.com/NobreRayook/EducationTools" target="_blank" class="github-btn"></div>
-class="fab fa-github"></i></a>
-</footer>
+    <div id="submenu-simul" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-vial"></i>
+        <h2>SIMULAÇÕES EDUCATIVAS</h2>
+        </div>
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('detalhes-phet')">
+            <i class="fas fa-flask"></i>
+            <span>PHET SIMULAÇÕES - Simulações interativas</span>
+        </div>
+        </div>
+    </div>
+
+    <div id="detalhes-phet" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-flask"></i>
+        <h2>PHET SIMULAÇÕES - DETALHES</h2>
+        </div>
+        <p>Plataforma de simulações interativas para ensino de ciências e matemática con conteúdo em português.</p>
+        <div class="btn-container">
+        <a href="https://phet.colorado.edu/pt_BR/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="submenu-prompts" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-comment-dots"></i>
+        <h2>PROMPTS AVANÇADOS PARA IA'S</h2>
+        </div>
+        <p>Utilize esses prompts para extrair o máximo potencial das IAs, economizando tempo e melhorando resultados.</p>
+
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('prompts-motivacionais')">
+            <i class="fas fa-fire"></i>
+            <span>PROMPTS MOTIVACIONAIS</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('prompts-estudar')">
+            <i class="fas fa-book"></i>
+            <span>PROMPTS PARA ESTUDAR</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('prompts-produtividade')">
+            <i class="fas fa-tasks"></i>
+            <span>PROMPTS PARA PRODUTIVIDADE</span>
+        </div>
+        </div>
+    </div>
+
+    <div id="prompts-motivacionais" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-fire"></i>
+        <h2>PROMPTS MOTIVACIONAIS</h2>
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero.')">
+            "Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois.')">
+            "Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Me conte algo que me faça ver que recomeçar hoje é o que vai me salvar amanhã.')">
+            "Me conte algo que me faça ver que recomeçar hoje é o que vai me salvar amanhã."
+        </div>
+
+        <div class="btn-container">
+        <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="prompts-estudar" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-book"></i>
+        <h2>PROMPTS PARA ESTUDAR</h2>
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele.')">
+            "Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Sou iniciante em [tópico]. Crie um roteiro passo a passo do iniciante ao avançado.')">
+            "Sou iniciante em [tópico]. Crie um roteiro passo a passo do iniciante ao avançado."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Aja como professor de [assunto]. Foque nos pontos mais prováveis de cair na prova.')">
+            "Aja como professor de [assunto]. Foque nos pontos mais prováveis de cair na prova."
+        </div>
+
+        <div class="btn-container">
+        <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="prompts-produtividade" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-tasks"></i>
+        <h2>PROMPTS PARA PRODUTIVIDADE</h2>
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Crie um plano de 4 semanas para aumentar minha produtividade em [área].')">
+            "Crie um plano de 4 semanas para aumentar minha produtividade em [área]."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Desenvolva um sistema de organização pessoal integrando áreas profissionais e pessoais.')">
+            "Desenvolva um sistema de organização pessoal integrando áreas profissionais e pessoais."
+        </div>
+
+        <div class="prompt-text" onclick="copyToClipboard('Aja como um coach de produtividade. Analise minha rotina e proponha 5 mudanças.')">
+            "Aja como um coach de produtividade. Analise minha rotina e proponha 5 mudanças."
+        </div>
+
+        <div class="btn-container">
+        <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="submenu-edu" class="submenu">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>FERRAMENTAS EDUCACIONAIS</h2>
+        </div>
+        <div class="submenu-grid">
+        <div class="submenu-item" onclick="showDetails('detalhes-khan')">
+            <i class="fas fa-university"></i>
+            <span>KHAN ACADEMY - Cursos gratuitos</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-duolingo')">
+            <i class="fas fa-language"></i>
+            <span>DUOLINGO - Aprendizado de idiomas</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-wolfram')">
+            <i class="fas fa-square-root-alt"></i>
+            <span>WOLFRAM ALPHA - Resolução matemática</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-anki')">
+            <i class="fas fa-layer-group"></i>
+            <span>ANKI - Flashcards intelligentes</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-quizlet')">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>QUIZLET - Ferramentas de estudo</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-brainly')">
+            <i class="fas fa-users"></i>
+            <span>BRAINLY - Comunidade estudantil</span>
+        </div>
+        <div class="submenu-item" onclick="showDetails('detalhes-geogebra')">
+            <i class="fas fa-shapes"></i>
+            <span>GEOGEBRA - Matemática interativa</span>
+        </div>
+        </div>
+    </div>
+
+    <div id="detalhes-khan" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-university"></i>
+        <h2>KHAN ACADEMY - DETALHES</h2>
+        </div>
+        <p>Plataforma gratuita con cursos de matemática, ciências e programação. Conteúdo em português con exercícios.</p>
+        <div class="btn-container">
+        <a href="https://pt.khanacademy.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-duolingo" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-language"></i>
+        <h2>DUOLINGO - DETALHES</h2>
+        </div>
+        <p>Aplicativo para aprender idiomas con lições curtas e gamificação. Suporta mais de 30 idiomas.</p>
+        <div class="btn-container">
+        <a href="https://pt.duolingo.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-wolfram" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-square-root-alt"></i>
+        <h2>WOLFRAM ALPHA - DETALHES</h2>
+        </div>
+        <p>Ferramenta computacional para resolver problemas de matemática, física e engenharia con passo a passo.</p>
+        <div class="btn-container">
+        <a href="https://www.wolframalpha.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-anki" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-layer-group"></i>
+        <h2>ANKI - DETALHES</h2>
+        </div>
+        <p>Sistema de repetição espaçada para memorização eficiente con suporte a imagens, áudio e formatação avançada.</p>
+        <div class="btn-container">
+        <a href="https://apps.ankiweb.net/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-quizlet" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-puzzle-piece"></i>
+        <h2>QUIZLET - DETALHES</h2>
+        </div>
+        <p>Plataforma de estudo con flashcards, jogos e testes para diversas disciplinas e níveis de ensino.</p>
+        <div class="btn-container">
+        <a href="https://quizlet.com/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-brainly" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-users"></i>
+        <h2>BRAINLY - DETALHES</h2>
+        </div>
+        <p>Comunidade de estudantes para compartilhar conhecimento e tirar dúvidas em diversas disciplinas escolares.</p>
+        <div class="btn-container">
+        <a href="https://brainly.com.br/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="detalhes-geogebra" class="details">
+        <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-shapes"></i>
+        <h2>GEOGEBRA - DETALHES</h2>
+        </div>
+        <p>Software matemático interativo para geometria, álgebra e cálculo. Versões para desktop e online.</p>
+        <div class="btn-container">
+        <a href="https://www.geogebra.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
+        <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+        </div>
+    </div>
+
+    <div id="descricao-geral" class="details">
+        <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+        <div class="section-title">
+        <i class="fas fa-info-circle"></i>
+        <h2>EDUTOOLS - V2.5 (2025) - DESCRIÇÃO DAS FERRAMENTAS</h2>
+        </div>
+        <p><strong>NAPKIN AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
+        <p><strong>GAMMA AI:</strong> Criação de apresentações automáticas</p>
+        <p><strong>FLEXCLIP:</strong> Editor para gráficos e infográficos</p>
+        <p><strong>DREAMINA:</strong> Geração de imagens e vídeos via IA</p>
+        <p><strong>COPILOT:</strong> Assistente de IA para pesquisas</p>
+        <p><strong>DEEPSEEK:</strong> Cálculos matemáticos e análise de dados</p>
+        <p><strong>STIRLING PDF:</strong> Manipulação de PDFs con privacidade</p>
+        <p><strong>CO-STORM:</strong> Gerador de artigos acadêmicos</p>
+        <p><strong>LIBREOFFICE:</strong> Suite Office código-aberto</p>
+        <p><strong>NOTION:</strong> Plataforma para organização e planejamento</p>
+        <p><strong>CHATPDF:</strong> Leitor inteligente de PDFs</p>
+        <p><strong>PHET SIMULAÇÕES:</strong> Simulações interativas educativas</p>
+        <p><strong>GOOGLE DOCS:</strong> Editor de documentos online</p>
+        <p><strong>GOOGLE ACADÉMICO:</strong> Pesquisa de literatura científica</p>
+        <p><strong>CHATGPT:</strong> Assistente para conversas naturais</p>
+        <p><strong>GEMINI:</strong> Assistente do Google integrado</p>
+        <p><strong>ARCHIMEDS: </strong> Plataforma para estudos médicos</p>
+        <p><strong>KHAN ACADEMY: </strong> Cursos gratuitos online</p>
+        <p><strong>DUOLINGO: </strong> Aprendizado de idiomas</p>
+        <p><strong>WOLFRAM ALPHA: </strong> Resolução de problemas matemáticos</p>
+        <p><strong>ANKI: </strong> Flashcards para memorização</p>
+        <p><strong>QUIZLET: </strong> Ferramentas de estudo gamificadas</p>
+        <p><strong>BRAINLY: </strong> Comunidade de estudantes</p>
+        <p><strong>GEOGEBRA: </strong> Matemática interativa</p>
+    </div>
+    </main>
+
+    <footer>
+    Desenvolvido por João Samuel & Maria Vitória<br>
+    Versão 2.5 - 2025<br>
+    Este site foi testado no Windows, Linux, Android e Iphone<br>
+    <a href="https://github.com/JSofc/EduTools" target="_blank" class="github-btn"><i class="fab fa-github"></i></a>
+    </footer>
 </div>
 
 <div id="copy-notification" class="copy-notification">Texto copiado para a área de transferência!</div>
@@ -1160,80 +1086,76 @@ function backToSubmenu(submenuId) {
 }
 
 function hideAllSubmenus() {
-
-const submenus = document.querySelectorAll('.submenu');
-submenus.forEach(submenu => {
-    submenu.style.display = 'none';
-});
-
+    const submenus = document.querySelectorAll('.submenu');
+    submenus.forEach(submenu => {
+        submenu.style.display = 'none';
+    });
 }
 
 function hideAllDetails() {
     const details = document.querySelectorAll('.details');
     details.forEach(detail => {
-    detail.style.display = 'none';
+        detail.style.display = 'none';
     });
 }
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-    const notification = document.getElementById('copy-notification');
-    notification.style.display = 'block';
-    setTimeout(() => {
-    notification.style.display = 'none';
-    }, 2000);
+        const notification = document.getElementById('copy-notification');
+        notification.style.display = 'block';
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 2000);
     });
 }
 
 function initSearch() {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
-
+    
     const searchableItems = [];
     document.querySelectorAll('.submenu-item').forEach(item => {
-    const text = item.querySelector('span').textContent;
-    const onclick = item.getAttribute('onclick');
-    const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
-    searchableItems.push({ text, detailId });
-
-});
-
-searchInput.addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase().trim();
-    searchResults.innerHTML = "";
-
-    if (searchTerm.length < 2) {
-    searchResults.style.display = 'none';
-    return;
-    }
-
-const filteredItems = searchableItems.filter(item =>
-    item.text.toLowerCase().includes(searchTerm)
-);
-
-if (filteredItems.length > 0) {
-    searchResults.style.display = 'block';
-    filteredItems.forEach(item => {
-    const resultItem = document.createElement('div');
-    resultItem.className = 'search-result-item';
-    resultItem.textContent = item.text;
-    resultItem.addEventListener('click', () => {
-    showDetails(item.detailId);
-    searchResults.style.display = 'none';
-    searchInput.value = "";
+        const text = item.querySelector('span').textContent;
+        const onclick = item.getAttribute('onclick');
+        const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
+        searchableItems.push({ text, detailId });
     });
-    searchResults.appendChild(resultItem);
+    
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        searchResults.innerHTML = '';
+        
+        if (searchTerm.length < 2) {
+            searchResults.style.display = 'none';
+            return;
+        }
+        
+        const filteredItems = searchableItems.filter(item => 
+            item.text.toLowerCase().includes(searchTerm)
+        );
+        
+        if (filteredItems.length > 0) {
+            searchResults.style.display = 'block';
+            filteredItems.forEach(item => {
+                const resultItem = document.createElement('div');
+                resultItem.className = 'search-result-item';
+                resultItem.textContent = item.text;
+                resultItem.addEventListener('click', () => {
+                    showDetails(item.detailId);
+                    searchResults.style.display = 'none';
+                    searchInput.value = '';
+                });
+                searchResults.appendChild(resultItem);
+            });
+        } else {
+            searchResults.style.display = 'none';
+        }
     });
-} else {
-    searchResults.style.display = 'none';
-}
-
-});
-
-document.addEventListener('click', function(e) {
-    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-    searchResults.style.display = 'none';
-    }
+    
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none';
+        }
     });
 }
 
