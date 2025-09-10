@@ -2,7 +2,7 @@
 
 ![Badge Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
 ![Badge Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
-![Badge Plataforma](https://img.shields.io/badge/plataforma-Windows-lightgrey)
+![Badge Plataforma]([https://img.shields.io/badge/plataforma-Windows-lightgrey](https://img.shields.io/badge/plataforma-Windows%2520%257C%2520Linux%2520%257C%2520Android%2520%257C%2520iPhone-lightgrey)
 
 **EduTools** é um projeto gratuito desenvolvido em **HTML, CSS e JavaScript** que reúne, em um só lugar, ferramentas online para educação, produtividade e inteligência artificial.
 
