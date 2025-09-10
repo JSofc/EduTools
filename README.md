@@ -36,7 +36,7 @@
 
 ## 🖥️ Como acessar
 
-- Para acessar o Projeto, vá em **'Link do Projeto'** e embaixo estará o link, é só clicar e será direcionado.
+- Para acessar o Projeto, vá em **'Link do Projeto'** e embaixo estará o link, é só clicar e será redirecionado.
 
 ---
 
