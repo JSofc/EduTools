@@ -48,7 +48,7 @@
 
 ## ❗ Aviso Legal
 
-- Este programa é **gratuito** e não deve ser vendido em nenhuma circunstância.  
+- Este projeto é **gratuito** e não deve ser vendido em nenhuma circunstância.  
 - Sinta-se à vontade para **divulgar**, usar e adaptar, mas **não comercialize**.  
 - Ao utilizar, você concorda em fazer uso responsável e ético das ferramentas acessadas.
 
