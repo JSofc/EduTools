@@ -34,16 +34,15 @@
 
 ---
 
-## 🖥️ Como usar
+## 🖥️ Como acessar
 
-1. Baixe o arquivo `.html` do EduTools.
-2. Abra o arquivo que vocẽ será direcionado ao nosso 'site' no seu navegador.
+- Para acessar o Projeto, vá em **'Link do Projeto'** e embaixo estará o link, é só clicar e será direcionado.
 
 ---
 
-## 🔗 Link para Download
+## 🔗 Link do Projeto:
 
-➡️ 
+➡️ https://nobrerayook.github.io/EduTools/
 
 ---
 
